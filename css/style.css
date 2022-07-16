@@ -34,11 +34,64 @@ body {
     color: var(--colour-button-hover);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid tomato;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0; 
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+
 /* ================/GENERAL CLASSES==================== */
 
 /* ================HEADER==================== */
 .page-header {
     background-color: var(--colour-white-text);
+}
+
+.page-container {
+    display: flex;
+    align-items: center;
+
 }
 
 .logo {
@@ -47,11 +100,14 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: var(--colour-logo);
+    margin-right: 93px;
 }
 
 .first-word {
     color: var(--colour-accent);
 }
+
+
 
 .nav-link:hover,
 .nav-link:focus {
@@ -62,11 +118,29 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
 }
+
+.contact-item,
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
 
 .contact-link:hover,
 .contact-link:focus {
     color: var(--colour-accent);
+}
+
+.contact-list {
+    display: flex;
+    margin-left: auto;
 }
 
 .contact-link {
@@ -80,7 +154,13 @@ body {
 
 /* ================MAIN==================== */
 
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .text-hero {
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -91,12 +171,20 @@ body {
 }
 
 .modal-btn {
+    display: block;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     border-radius: 4px;
     letter-spacing: 0.06em;
-    cursor: pointer;
     border: none;
     color: var(--colour-white-text);
     background-color: var(--colour-button-hover);
@@ -113,8 +201,13 @@ body {
     background-color: var(--colour-accent);
 }
 
+.list-benefits {
+    display: flex;
+    flex-basis: calc((100%-3*30)/4);
+}
+
 .benefits-title {
-    font-size: 14px;
+    font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -176,7 +269,6 @@ body {
     line-height: 1.63;
     border-radius: 4px;
     padding: 6px 22px;
-    cursor: pointer;
     border: none;
     background-color: var(--colour-white-background-people);
 }

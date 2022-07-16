@@ -11,49 +11,58 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <!--HEADER-->
         <header class="page-header">
-            <a class="logo underline" href="./index.html" lang="en"
-                ><span class="first-word">Web</span>Studio</a
-            >
-            <nav class="page-nav">
-                <ul class="nav-list mark">
-                    <li class="nav-item">
-                        <a class="nav-link current underline" href="./index.html">Студія</a>
+            <div class="container page-container">
+                <a class="logo underline" href="./index.html" lang="en"
+                    ><span class="first-word">Web</span>Studio</a
+                >
+                <nav class="page-nav">
+                    <ul class="nav-list mark">
+                        <li class="nav-item">
+                            <a class="nav-link current underline" href="./index.html">Студія</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link underline" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link underline" href="">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contact-list mark">
+                    <li class="contact-item">
+                        <a class="contact-link underline" href="mailto:info@devstudio.com"
+                            >info@devstudio.com</a
+                        >
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link underline" href="./portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link underline" href="">Контакти</a>
+                    <li class="contact-item">
+                        <a class="contact-link underline" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contact-list mark">
-                <li class="contact-item">
-                    <a class="contact-link underline" href="mailto:info@devstudio.com"
-                        >info@devstudio.com</a
-                    >
-                </li>
-                <li class="contact-item">
-                    <a class="contact-link underline" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
+            </div>
         </header>
         <!--/HEADER-->
 
         <!--MAIN-->
         <main class="page-content">
+            
             <section class="hero-content">
-                <h1 class="text-hero">Ефективні вирішення для вашого бізнесу</h1>
-                <button class="modal-btn" type="button">Замовити послугу</button>
+                <div class="container hero-container">
+                    <h1 class="text-hero">Ефективні вирішення для <br> вашого бізнесу</h1>
+                    <button class="modal-btn" type="button">Замовити послугу</button>
+                </div>
             </section>
+           
             <section class="benefits-content">
-                <h2 hidden>Переваги</h2>
-                <ul class="list-benefits mark">
+                <h2 class="visually-hidden">Переваги</h2>
+                <div class="container">
+               <ul class="list-benefits mark">
+
                     <li class="item-benefits">
                         <h3 class="benefits-title">Увага до детелей</h3>
                         <p class="benefits-text">
@@ -61,6 +70,7 @@
                             позицій.
                         </p>
                     </li>
+
                     <li class="benefits-item">
                         <h3 class="benefits-title">Пунктуальність</h3>
                         <p class="benefits-text">
@@ -68,12 +78,14 @@
                             себе.
                         </p>
                     </li>
+
                     <li class="benefits-item">
                         <h3 class="benefits-title">Планування</h3>
                         <p class="benefits-text">
                             Також консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
+
                     <li class="benefits-item">
                         <h3 class="benefits-title">Сучасні технології</h3>
                         <p class="benefits-text">
@@ -81,11 +93,18 @@
                             завдань.
                         </p>
                     </li>
+
                 </ul>
+                </div>
+ 
             </section>
+
             <section class="presentation-content">
                 <h2 class="title-content">Чим ми займаємося</h2>
+                <div class="container">
+                
                 <ul class="list-presentation mark">
+
                     <li class="item-presentation">
                         <img
                             class="img-presentation"
@@ -95,6 +114,7 @@
                             height="274"
                         />
                     </li>
+
                     <li class="item-presentation">
                         <img
                             class="img-presentation"
@@ -104,6 +124,7 @@
                             height="274"
                         />
                     </li>
+
                     <li class="item-presentation">
                         <img
                             class="img-presentation"
@@ -113,63 +134,78 @@
                             height="274"
                         />
                     </li>
+
                 </ul>
+            </div>
             </section>
+
             <section class="comand-content">
                 <h2 class="title-content">Наша команда</h2>
-                <ul class="list-comand mark">
-                    <li class="item-comand">
-                        <img
-                            src="./images/our-team/ihor-demyanenko.jpg"
-                            alt="Ігор фото"
-                            width="270"
-                            height="260"
-                        />
-                        <h3 class="name-comand">Ігор Демяненко</h3>
-                        <p class="text-prof" lang="en">Product Designer</p>
-                    </li>
-                    <li class="item-comand">
-                        <img
-                            src="./images/our-team/olga-repina.jpg"
-                            alt="Ольга фото"
-                            width="270"
-                            height="260"
-                        />
-                        <h3 class="name-comand">Ольга Рєпіна</h3>
-                        <p class="text-prof" lang="en">Frontend Developer</p>
-                    </li>
-                    <li class="item-comand">
-                        <img
-                            src="./images/our-team/mykola-tarasiv.jpg"
-                            alt="Микола фото"
-                            width="270"
-                            height="260"
-                        />
-                        <h3 class="name-comand">Микола Тарасів</h3>
-                        <p class="text-prof" lang="en">Marketing</p>
-                    </li>
-                    <li>
-                        <img
-                            src="./images/our-team/mykhailo-yermakov.jpg"
-                            alt="Михайло фото"
-                            width="270"
-                            height="260"
-                        />
-                        <h3 class="name-comand">Михайло Єрмаков</h3>
-                        <p class="text-prof" lang="en">UI Designer</p>
-                    </li>
-                </ul>
+
+                <div class="container">
+                    <ul class="list-comand mark">
+
+                        <li class="item-comand">
+                            <img
+                                src="./images/our-team/ihor-demyanenko.jpg"
+                                alt="Ігор фото"
+                                width="270"
+                                height="260"
+                            />
+                            <h3 class="name-comand">Ігор Демяненко</h3>
+                            <p class="text-prof" lang="en">Product Designer</p>
+                        </li>
+    
+                        <li class="item-comand">
+                            <img
+                                src="./images/our-team/olga-repina.jpg"
+                                alt="Ольга фото"
+                                width="270"
+                                height="260"
+                            />
+                            <h3 class="name-comand">Ольга Рєпіна</h3>
+                            <p class="text-prof" lang="en">Frontend Developer</p>
+                        </li>
+    
+                        <li class="item-comand">
+                            <img
+                                src="./images/our-team/mykola-tarasiv.jpg"
+                                alt="Микола фото"
+                                width="270"
+                                height="260"
+                            />
+                            <h3 class="name-comand">Микола Тарасів</h3>
+                            <p class="text-prof" lang="en">Marketing</p>
+                        </li>
+    
+                        <li>
+                            <img
+                                src="./images/our-team/mykhailo-yermakov.jpg"
+                                alt="Михайло фото"
+                                width="270"
+                                height="260"
+                            />
+                            <h3 class="name-comand">Михайло Єрмаков</h3>
+                            <p class="text-prof" lang="en">UI Designer</p>
+                        </li>
+    
+                    </ul>
+                </div>
+
             </section>
+
         </main>
         <!--/MAIN-->
 
         <!--FUTER-->
         <footer class="page-footer">
-            <a class="logo-footer underline" href="./index.html" lang="en"
+            <div class="container">
+                <a class="logo-footer underline" href="./index.html" lang="en"
                 ><span class="first-word">Web</span>Studio</a
             >
             <address>
                 <ul class="contacts mark">
+
                     <li class="list-contacts">
                         <a
                             class="link-address underline"
@@ -180,18 +216,23 @@
                             м. Київ, пр-т Лесі Українки, 26
                         </a>
                     </li>
+
                     <li class="item-contact">
                         <a class="contact-link underline" href="mailto:info@example.com"
                             >info@example.com</a
                         >
                     </li>
+
                     <li class="item-contact">
                         <a class="contact-link underline" href="tel:+380961111111"
                             >+38 096 111 11 11</a
                         >
                     </li>
+
                 </ul>
             </address>
+            </div>
+
         </footer>
         <!--/FUTER-->
     </body>
