@@ -1,0 +1,207 @@
+:root {
+    --colour-accent: #2196f3;
+    --colour-button-hover: #188ce8;
+    --colour-white-background: #ffffff;
+    --colour-white-background-main: #e5e5e5;
+    --colour-white-background-people: #f5f4fa;
+    --colour-dark-background: #2f303a;
+    --colour-white-text: #ffffff;
+    --colour-dark-text: #212121;
+    --colour-gray-text: #757575;
+    --colour-logo: #000000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--colour-dark-text);
+    background-color: var(--colour-white-background-main);
+}
+
+/* ================GENERAL CLASSES==================== */
+
+.mark {
+    list-style: none;
+}
+
+.underline {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.nav-list .nav-link.current {
+    color: var(--colour-button-hover);
+}
+
+/* ================/GENERAL CLASSES==================== */
+
+/* ================HEADER==================== */
+.page-header {
+    background-color: var(--colour-white-text);
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--colour-logo);
+}
+
+.first-word {
+    color: var(--colour-accent);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--colour-accent);
+}
+
+.nav-list {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--colour-accent);
+}
+
+.contact-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--colour-gray-text);
+}
+
+/* ================/HEADER==================== */
+
+/* ================MAIN==================== */
+
+.text-hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--colour-white-background);
+}
+
+.modal-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: none;
+    color: var(--colour-white-text);
+    background-color: var(--colour-button-hover);
+}
+
+.hero-content,
+.page-footer {
+    background-color: var(--colour-dark-background);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    color: var(--colour-white-text);
+    background-color: var(--colour-accent);
+}
+
+.benefits-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.benefits-text {
+    line-height: 1.71;
+    color: var(--colour-gray-text);
+}
+
+.title-content {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.comand-content {
+    background-color: var(--colour-white-background-people);
+}
+
+.name-comand {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.text-prof {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--colour-gray-text);
+}
+
+/* ================/MAIN==================== */
+
+/* ================FUTER==================== */
+
+.logo-footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--colour-white-text);
+}
+
+.link-address {
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--colour-white-background);
+}
+
+/* ================/FUTER==================== */
+
+/* ================MAIN PORTFOLIO==================== */
+
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    border-radius: 4px;
+    padding: 6px 22px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--colour-white-background-people);
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--colour-white-background);
+    background-color: var(--colour-accent);
+}
+
+.nav-link,
+.link-work:visited {
+    color: var(--colour-dark-text);
+}
+
+.title-portfolio {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.text-portfolio {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--colour-gray-text);
+}
+
+/* ================/MAIN PORTFOLIO==================== */
