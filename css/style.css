@@ -10,6 +10,7 @@
     --colour-gray-text: #757575;
     --colour-logo: #000000;
     --colour-border-logo: #ececec;
+    --colour-decoration-card: #eeeeee;
 }
 
 body {
@@ -90,7 +91,6 @@ button {
     background-color: var(--colour-white-text);
     border-bottom: 1px solid var(--colour-border-logo);
 }
-
 
 .page-container {
     display: flex;
@@ -216,7 +216,7 @@ button {
 }
 
 .benefits-item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - (3 * 30px)) / 4);
 }
 
 .benefits-item:not(:last-child) {
@@ -325,7 +325,7 @@ button {
     color: var(--colour-white-background);
 }
 
-.list-contact {
+.list-contact:not(:last-child) {
     display: block;
     margin-bottom: 9px;
 }
@@ -374,16 +374,27 @@ button {
     display: flex;
     flex-wrap: wrap;
 }
-
 .item-work {
-    flex-basis: calc((100% - 90px) / 3);`
-
-    background-color: #2196f3;
+    flex-basis: calc((100% - (2 * 30px)) / 3);
 }
 
+.item-work:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
 
+.item-work:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+}
+
+.decoration-card {
+    padding: 20px 24px;
+    background-color: var(--colour-decoration-card);
+    border: 1px solid #eeeeee;
+}
 
 .title-portfolio {
+    margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
