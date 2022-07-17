@@ -9,6 +9,7 @@
     --colour-dark-text: #212121;
     --colour-gray-text: #757575;
     --colour-logo: #000000;
+    --colour-border-logo: #ececec;
 }
 
 body {
@@ -69,29 +70,31 @@ ul,
 ol {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
     cursor: pointer;
 }
 
-
 /* ================/GENERAL CLASSES==================== */
 
 /* ================HEADER==================== */
 .page-header {
     background-color: var(--colour-white-text);
+    border-bottom: 1px solid var(--colour-border-logo);
 }
+
 
 .page-container {
     display: flex;
     align-items: center;
-
 }
 
 .logo {
@@ -107,8 +110,6 @@ button {
     color: var(--colour-accent);
 }
 
-
-
 .nav-link:hover,
 .nav-link:focus {
     color: var(--colour-accent);
@@ -121,17 +122,19 @@ button {
     display: flex;
 }
 
-.contact-item,
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .nav-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav-item {
+.nav-link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
-
 
 .contact-link:hover,
 .contact-link:focus {
@@ -154,12 +157,14 @@ button {
 
 /* ================MAIN==================== */
 
-.hero-container {
+/* section 1 */
+.hero-content {
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
 .text-hero {
+    margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -178,7 +183,6 @@ button {
     padding-left: 32px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 30px;
 
     font-weight: 700;
     font-size: 16px;
@@ -201,12 +205,27 @@ button {
     background-color: var(--colour-accent);
 }
 
+/* section 2 */
+.benefits-content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .list-benefits {
     display: flex;
-    flex-basis: calc((100%-3*30)/4);
+}
+
+.benefits-item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .benefits-title {
+    margin-bottom: 10px;
+
     font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
@@ -217,17 +236,57 @@ button {
     color: var(--colour-gray-text);
 }
 
+/* section 3  */
+.presentation-content {
+    padding-bottom: 94px;
+}
+
 .title-content {
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
 
+.list-presentation {
+    display: flex;
+}
+
+.item-presentation:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* section 4 */
 .comand-content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--colour-white-background-people);
 }
 
+.list-comand {
+    display: flex;
+}
+
+.item-comand {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.item-comand:not(:last-child) {
+    margin-right: 30px;
+}
+
+.decoration {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .name-comand {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -244,8 +303,15 @@ button {
 /* ================/MAIN==================== */
 
 /* ================FUTER==================== */
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .logo-footer {
+    display: block;
+    margin-bottom: 20px;
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -257,6 +323,11 @@ button {
     font-weight: 400;
     line-height: 1.71;
     color: var(--colour-white-background);
+}
+
+.list-contact {
+    display: block;
+    margin-bottom: 9px;
 }
 
 /* ================/FUTER==================== */
