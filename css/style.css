@@ -216,7 +216,7 @@ button {
 }
 
 .benefits-item {
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 120px) / 4);
 }
 
 .benefits-item:not(:last-child) {
@@ -333,6 +333,19 @@ button {
 /* ================/FUTER==================== */
 
 /* ================MAIN PORTFOLIO==================== */
+.filter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list-filter {
+    display: flex;
+    justify-content: center;
+}
+
+.item-filter:not(:last-child) {
+    margin-right: 8px;
+}
 
 .btn {
     font-weight: 500;
@@ -342,6 +355,7 @@ button {
     padding: 6px 22px;
     border: none;
     background-color: var(--colour-white-background-people);
+    margin-bottom: 50px;
 }
 
 .btn:hover,
@@ -350,10 +364,24 @@ button {
     background-color: var(--colour-accent);
 }
 
+/* table */
 .nav-link,
 .link-work:visited {
     color: var(--colour-dark-text);
 }
+
+.list-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-work {
+    flex-basis: calc((100% - 90px) / 3);`
+
+    background-color: #2196f3;
+}
+
+
 
 .title-portfolio {
     font-size: 18px;
