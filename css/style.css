@@ -18,7 +18,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--colour-dark-text);
-    background-color: var(--colour-white-background-main);
+    background-color: var(--colour-white-background);
 }
 
 /* ================GENERAL CLASSES==================== */
@@ -32,8 +32,18 @@ body {
     font-style: normal;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .nav-list .nav-link.current {
     color: var(--colour-button-hover);
+}
+
+.list-filter .btn.current {
+    background-color: var(--colour-accent);
+    color: var(--colour-white-background);
 }
 
 .visually-hidden {
@@ -84,15 +94,15 @@ button {
     cursor: pointer;
 }
 
-/* ================/GENERAL CLASSES==================== */
+/* ================/GENERAL CLASSES===================== */
 
 /* ================HEADER==================== */
 .page-header {
-    background-color: var(--colour-white-text);
+    background-color: var(--colour-white-background);
     border-bottom: 1px solid var(--colour-border-logo);
 }
 
-.page-container {
+.page-header > .container {
     display: flex;
     align-items: center;
 }
@@ -165,6 +175,9 @@ button {
 
 .text-hero {
     margin-bottom: 30px;
+    width: 694px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 900;
     font-size: 44px;
@@ -206,10 +219,6 @@ button {
 }
 
 /* section 2 */
-.benefits-content {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .list-benefits {
     display: flex;
@@ -238,7 +247,7 @@ button {
 
 /* section 3  */
 .presentation-content {
-    padding-bottom: 94px;
+    padding-top: 0px;
 }
 
 .title-content {
@@ -258,11 +267,9 @@ button {
 }
 
 /* section 4 */
-.comand-content {
-    padding-top: 94px;
-    padding-bottom: 94px;
 
-    background-color: var(--colour-white-background-people);
+.comand-content {
+    background-color: #f5f4fa;
 }
 
 .list-comand {
@@ -273,6 +280,7 @@ button {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--colour-white-background);
 }
 
 .item-comand:not(:last-child) {
@@ -333,14 +341,11 @@ button {
 /* ================/FUTER==================== */
 
 /* ================MAIN PORTFOLIO==================== */
-.filter {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .list-filter {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .item-filter:not(:last-child) {
@@ -355,7 +360,6 @@ button {
     padding: 6px 22px;
     border: none;
     background-color: var(--colour-white-background-people);
-    margin-bottom: 50px;
 }
 
 .btn:hover,
